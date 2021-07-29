@@ -21,7 +21,7 @@ public class LinkedStack<T> {
     public void push(T item) {
         top = new Node<>(item, top);
     }
-    // 可以返回 null
+    // null 作为结束的标志(哨兵)
     public T pop() {
         T result = top.item;
         if (!top.end()) 
