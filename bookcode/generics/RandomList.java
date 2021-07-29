@@ -16,7 +16,7 @@ public class RandomList<T> extends ArrayList<T> {
     Arrays.stream(
       ("The quick brown fox jumped over " +
       "the lazy brown dog").split(" "))
-      .forEach(rs::add);
+      .forEach(rs::add);  
     IntStream.range(0, 11).forEach(i ->
       System.out.print(rs.select() + " "));
   }
