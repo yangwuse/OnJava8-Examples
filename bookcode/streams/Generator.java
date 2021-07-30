@@ -10,7 +10,7 @@ import java.util.stream.*;
 public class Generator implements Supplier<String> {
   Random rand = new Random(47);
   char[] letters =
-    "ABCDEFGHIJKLMNOPQRSTUVWXYZ".toCharArray();
+    "ABCDEFGHIJKLMNOPQRSTUVWXYZ".toCharArray(); 
   @Override public String get() {
     return "" + letters[rand.nextInt(letters.length)];
   }
