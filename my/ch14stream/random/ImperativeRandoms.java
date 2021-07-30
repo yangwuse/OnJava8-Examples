@@ -1,4 +1,4 @@
-package my.ch14stream;
+package my.ch14stream.random;
 
 import java.util.Random;
 import java.util.SortedSet;
