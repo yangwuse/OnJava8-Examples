@@ -1,4 +1,4 @@
-package my.ch14stream.random;
+package my.ch14stream.createstream;
 
 import java.io.IOException;
 import java.nio.file.Files;

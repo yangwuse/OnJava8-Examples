@@ -1,4 +1,4 @@
-package my.ch14stream;
+package my.ch14stream.createstream;
 
 import java.util.stream.Stream;
 
@@ -14,7 +14,7 @@ public class Fibonacci {
     }
     public static void main(String[] args) {
         numbers()
-        .skip(20)
+        .skip(20)  // 跳过前 20 个元素
         .limit(10)
         .forEach(System.out::println);
     }

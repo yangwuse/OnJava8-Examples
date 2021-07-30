@@ -1,4 +1,4 @@
-package my.ch14stream.loop;
+package my.ch14stream.createstream;
 
 import static java.util.stream.IntStream.*;
 

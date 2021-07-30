@@ -1,4 +1,4 @@
-package my.ch14stream.generator;
+package my.ch14stream.createstream;
 
 import java.util.Random;
 import java.util.function.Supplier;

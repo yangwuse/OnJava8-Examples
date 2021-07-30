@@ -1,4 +1,4 @@
-package my.ch14stream;
+package my.ch14stream.createstream;
 
 import java.util.stream.Stream;
 import bookcode.streams.Bubble;

@@ -1,4 +1,4 @@
-package my.ch14stream.loop;
+package my.ch14stream.createstream;
 
 // range() 替代普通循环
 public class Looping {
