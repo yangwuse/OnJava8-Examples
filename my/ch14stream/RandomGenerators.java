@@ -3,7 +3,7 @@ package my.ch14stream;
 import java.util.Random;
 import java.util.stream.Stream;
 
-// 随机流生成器
+// 随机泛型流生成器
 public class RandomGenerators {
     public static <T> void show(Stream<T> stream) {
         stream
