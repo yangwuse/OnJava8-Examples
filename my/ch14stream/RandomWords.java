@@ -31,8 +31,9 @@ public class RandomWords implements Supplier<String> {
     }
 
     public static void main(String[] args) throws Exception {
+        // bug: 没发读取相对路径
         System.out.println(
-            Stream.generate(new RandomWords("Cheese.dat"))
+            Stream.generate(new RandomWords("/Users/yangwu/vscode-workspace/java-projects/java-base/onjava8-examples/bookcode/streams/Cheese.dat"))
                 .limit(10)
                 .collect(Collectors.joining(" ")));
     }
