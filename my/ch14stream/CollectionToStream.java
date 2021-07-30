@@ -35,7 +35,5 @@ public class CollectionToStream {
         map.entrySet().stream()
             .map(e -> e.getKey() + ": " + e.getValue())
             .forEach(System.out::println);
-
-        
     }
 }
