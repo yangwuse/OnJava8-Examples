@@ -3,7 +3,6 @@ package bookcode.streams;
 // (c)2021 MindView LLC: see Copyright.txt
 // We make no guarantees that this code is fit for any purpose.
 // Visit http://OnJava8.com for more book information.
-import java.io.*;
 import java.nio.file.*;
 import java.util.stream.*;
 import java.util.regex.Pattern;
