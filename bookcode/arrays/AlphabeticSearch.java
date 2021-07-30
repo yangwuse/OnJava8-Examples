@@ -5,8 +5,8 @@ package bookcode.arrays;
 // Visit http://OnJava8.com for more book information.
 // Searching with a Comparator import
 import java.util.*;
-import onjava.*;
-import static onjava.ArrayShow.*;
+import bookcode.onjava.*;
+import static bookcode.onjava.ArrayShow.*;
 
 public class AlphabeticSearch {
   public static void main(String[] args) {

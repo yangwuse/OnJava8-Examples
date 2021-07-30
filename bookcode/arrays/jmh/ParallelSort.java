@@ -4,7 +4,7 @@
 // Visit http://OnJava8.com for more book information.
 package bookcode.arrays.jmh;
 import java.util.*;
-import onjava.*;
+import bookcode.onjava.*;
 import org.openjdk.jmh.annotations.*;
 
 @State(Scope.Thread)

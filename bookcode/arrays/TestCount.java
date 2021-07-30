@@ -6,8 +6,8 @@ package bookcode.arrays;
 // Test counting generators
 import java.util.*;
 import java.util.stream.*;
-import onjava.*;
-import static onjava.ArrayShow.*;
+import bookcode.onjava.Count;
+import static bookcode.onjava.ArrayShow.*;
 
 public class TestCount {
   static final int SZ = 5;

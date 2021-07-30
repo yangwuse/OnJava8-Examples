@@ -5,7 +5,7 @@ package bookcode.arrays;
 // Visit http://OnJava8.com for more book information.
 // Using Arrays.equals()
 import java.util.*;
-import onjava.*;
+import bookcode.onjava.*;
 
 public class ComparingArrays {
   public static final int SZ = 15;

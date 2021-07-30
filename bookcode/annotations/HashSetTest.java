@@ -6,8 +6,8 @@
 // build/classes/java/main/annotations/HashSetTest.class}
 package bookcode.annotations;
 import java.util.*;
-import onjava.atunit.*;
-import onjava.*;
+import bookcode.onjava.atunit.*;
+import bookcode.onjava.*;
 
 public class HashSetTest {
   HashSet<String> testObject = new HashSet<>();

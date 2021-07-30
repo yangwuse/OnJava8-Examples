@@ -5,7 +5,7 @@ package bookcode.arrays;
 // Visit http://OnJava8.com for more book information.
 // Using Arrays.fill()
 import java.util.*;
-import static onjava.ArrayShow.*;
+import static bookcode.onjava.ArrayShow.*;
 
 public class FillingArrays {
   public static void main(String[] args) {

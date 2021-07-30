@@ -6,8 +6,8 @@ package bookcode.arrays;
 // Implementing Comparable in a class
 import java.util.*;
 import java.util.function.*;
-import onjava.*;
-import static onjava.ArrayShow.*;
+import bookcode.onjava.*;
+import static bookcode.onjava.ArrayShow.*;
 
 public class CompType implements Comparable<CompType> {
   int i;

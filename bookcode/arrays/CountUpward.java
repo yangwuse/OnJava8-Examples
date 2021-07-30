@@ -5,7 +5,7 @@ package bookcode.arrays;
 // Visit http://OnJava8.com for more book information.
 import java.util.*;
 import java.util.stream.*;
-import static onjava.ArrayShow.*;
+import static bookcode.onjava.ArrayShow.*;
 
 public class CountUpward {
   static long[] fillCounted(int size) {

@@ -6,8 +6,7 @@
 // {java onjava.atunit.AtUnit
 // build/classes/java/main/annotations/StackLStringTst.class}
 package bookcode.annotations;
-import onjava.atunit.*;
-import onjava.*;
+import bookcode.onjava.atunit.*;
 
 public class
 StackLStringTst extends StackL<String> {

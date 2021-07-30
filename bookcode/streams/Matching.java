@@ -6,7 +6,7 @@ package bookcode.streams;
 // Demonstrates short-circuiting of *Match() operations
 import java.util.stream.*;
 import java.util.function.*;
-import static streams.RandInts.*;
+import static bookcode.streams.RandInts.*;
 
 interface Matcher extends
   BiPredicate<Stream<Integer>, Predicate<Integer>> {}

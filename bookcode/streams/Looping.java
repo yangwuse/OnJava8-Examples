@@ -3,7 +3,7 @@ package bookcode.streams;
 // (c)2021 MindView LLC: see Copyright.txt
 // We make no guarantees that this code is fit for any purpose.
 // Visit http://OnJava8.com for more book information.
-import static onjava.Repeat.*;
+import static bookcode.onjava.Repeat.*;
 
 public class Looping {
   static void hi() { System.out.println("Hi!"); }

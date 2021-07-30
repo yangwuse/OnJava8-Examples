@@ -4,9 +4,9 @@ package bookcode.arrays;
 // We make no guarantees that this code is fit for any purpose.
 // Visit http://OnJava8.com for more book information.
 import java.util.*;
-import onjava.*;
-import static onjava.ArrayShow.*;
-import static onjava.ConvertTo.*;
+import bookcode.onjava.*;
+import static bookcode.onjava.ArrayShow.*;
+import static bookcode.onjava.ConvertTo.*;
 
 public class TestConvertTo {
   static final int SIZE = 6;

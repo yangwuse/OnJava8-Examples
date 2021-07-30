@@ -6,8 +6,8 @@
 // {java onjava.atunit.AtUnit
 // build/classes/java/main/annotations/AUComposition.class}
 package bookcode.annotations;
-import onjava.atunit.*;
-import onjava.*;
+import bookcode.onjava.atunit.*;
+import bookcode.onjava.*;
 
 public class AUComposition {
   AtUnitExample1 testObject = new AtUnitExample1();

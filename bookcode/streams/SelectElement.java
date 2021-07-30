@@ -5,7 +5,7 @@ package bookcode.streams;
 // Visit http://OnJava8.com for more book information.
 import java.util.*;
 import java.util.stream.*;
-import static streams.RandInts.*;
+import static bookcode.streams.RandInts.*;
 
 public class SelectElement {
   public static void main(String[] args) {

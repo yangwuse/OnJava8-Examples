@@ -5,8 +5,8 @@ package bookcode.arrays;
 // Visit http://OnJava8.com for more book information.
 // Sorting an array of Strings
 import java.util.*;
-import onjava.*;
-import static onjava.ArrayShow.*;
+import bookcode.onjava.*;
+import static bookcode.onjava.ArrayShow.*;
 
 public class StringSorting {
   public static void main(String[] args) {

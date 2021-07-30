@@ -4,7 +4,7 @@ package bookcode.arrays;
 // We make no guarantees that this code is fit for any purpose.
 // Visit http://OnJava8.com for more book information.
 import java.util.*;
-import onjava.*;
+import bookcode.onjava.*;
 
 public class StreamFromArray {
   public static void main(String[] args) {

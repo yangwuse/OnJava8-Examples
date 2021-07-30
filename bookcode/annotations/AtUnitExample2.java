@@ -7,8 +7,8 @@
 // build/classes/java/main/annotations/AtUnitExample2.class}
 package bookcode.annotations;
 import java.io.*;
-import onjava.atunit.*;
-import onjava.*;
+import bookcode.onjava.atunit.*;
+import bookcode.onjava.*;
 
 public class AtUnitExample2 {
   public String methodOne() {

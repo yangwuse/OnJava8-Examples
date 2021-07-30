@@ -7,8 +7,8 @@
 // {VisuallyInspectOutput}
 package bookcode.annotations;
 import java.util.*;
-import onjava.atunit.*;
-import onjava.*;
+import bookcode.onjava.atunit.*;
+import bookcode.onjava.*;
 
 public class AtUnitExample4 {
   static String theory = "All brontosauruses " +

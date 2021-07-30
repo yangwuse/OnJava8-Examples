@@ -4,7 +4,7 @@ package bookcode.arrays;
 // We make no guarantees that this code is fit for any purpose.
 // Visit http://OnJava8.com for more book information.
 import java.util.*;
-import onjava.*;
+import bookcode.onjava.*;
 
 public class ParallelSetAll {
   static final int SIZE = 10_000_000;
