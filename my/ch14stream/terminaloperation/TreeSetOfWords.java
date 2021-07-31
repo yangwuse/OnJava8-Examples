@@ -14,10 +14,10 @@ public class TreeSetOfWords {
             Files.lines(Paths.get("/Users/yangwu/vscode-workspace/java-projects/java-base/onjava8-examples/my/ch14stream/terminaloperation/TreeSetOfWords.java"))
                 .flatMap(s -> Arrays.stream(s.split("\\W+"))) // 非单词
                 .filter(s -> !s.matches("\\d+")) // 非数字
-                .map(String::trim)
+                .map(String::trim) // 去除单词两边空格
                 .filter(s -> s.length() > 2)
                 .limit(100)
-                .collect(Collectors.toCollection(TreeSet::new));
+                .collect(Collectors.toCollection(TreeSet::new)); // 传入构造器函数
             System.out.println(words);
 
     }    
