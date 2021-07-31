@@ -8,8 +8,8 @@ import java.util.stream.Stream;
 public class StreamOfStreams {
     public static void main(String[] args) {
         Stream.of(1, 2, 3)
-            .map(i -> Stream.of("a", "b", "c"))
-            .map(e -> e.getClass().getName())
+            .map(i -> Stream.of("a", "b", "c")) // 产生元素流
+            .map(e -> e.getClass().getName())   // 将元素流转换为 String
             .forEach(System.out::println);
     }
 }
