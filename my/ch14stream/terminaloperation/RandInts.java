@@ -15,8 +15,7 @@ public class RandInts {
     public static void main(String[] args) {
         RandInts.rands()
             .limit(10)
-            .mapToObj(i -> i + " ")
-            .forEach(System.out::print);
+            .forEach(n -> System.out.format("%d ", n));
     }
 
 }
