@@ -5,7 +5,6 @@ package bookcode.streams;
 // Visit http://OnJava8.com for more book information.
 import java.util.*;
 import java.util.stream.*;
-import java.util.function.*;
 
 public class Signal {
   private final String msg;
