@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.function.Predicate;
 import java.util.stream.Stream;
 
-// 筛选操作
+// filter() 筛选操作
 
 public class OptionalFilter {
     static String[] elements = 
