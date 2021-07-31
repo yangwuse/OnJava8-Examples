@@ -17,4 +17,11 @@ public class FileToWords {
             .flatMap(line -> 
                 Pattern.compile("\\W+").splitAsStream(line));
     }
+    // test
+    public static void main(String[] args) throws IOException {
+        stream("/Users/yangwu/vscode-workspace/java-projects/java-base/onjava8-examples/bookcode/streams/Cheese.dat")
+        .limit(10)
+        .map(w -> w + " ")
+        .forEach(System.out::print);
+    }
 }
