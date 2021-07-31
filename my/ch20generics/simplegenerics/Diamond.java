@@ -1,4 +1,4 @@
-package my.ch20generics.holder;
+package my.ch20generics.simplegenerics;
 
 // 钻石语法 <> 类型推测
 public class Diamond<T> {

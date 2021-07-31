@@ -1,4 +1,4 @@
-package my.ch20generics.holder;
+package my.ch20generics.simplegenerics;
 
 // 持有 Object 对象 需要手动类型转换 p793
 public class ObjectHolder {

@@ -1,4 +1,4 @@
-package my.ch20generics.holder;
+package my.ch20generics.simplegenerics;
 
 class Automobile {}
 public class Holder1 {

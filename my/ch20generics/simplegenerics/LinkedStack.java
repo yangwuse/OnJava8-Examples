@@ -1,4 +1,4 @@
-package my.ch20generics;
+package my.ch20generics.simplegenerics;
 
 // 链式泛型栈
 public class LinkedStack<T> {

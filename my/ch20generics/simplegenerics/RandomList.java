@@ -1,4 +1,4 @@
-package my.ch20generics;
+package my.ch20generics.simplegenerics;
 
 import java.util.ArrayList;
 import java.util.Arrays;

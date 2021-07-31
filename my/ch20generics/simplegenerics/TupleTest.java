@@ -1,4 +1,4 @@
-package my.ch20generics.tuple;
+package my.ch20generics.simplegenerics;
 
 import my.commonclass.Tuple2;
 import my.commonclass.Tuple3;

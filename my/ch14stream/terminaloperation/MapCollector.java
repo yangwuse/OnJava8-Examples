@@ -18,20 +18,16 @@ class Pair {
     }   
     public Character getC() { return c; }
     public Integer getI() { return i; }
-    @Override public String toString() {
-        return "Pair(" + c + "," + i + ")";
-    }
 }
 
 class RandomPair {
     Random rand = new Random(47);
     Iterator<Character> capChars = rand.ints(65, 91)
-        .mapToObj(i -> (char)i) // 转化成大写字母
+        .mapToObj(i -> (char)i)
         .iterator();
     public Stream<Pair> stream() {
-        return rand.ints(100, 1000).distinct() // 产生不同元素
-            .mapToObj(i -> new Pair(capChars.next(), i));
-
+        return rand.ints(100,1000).distinct()
+                .mapToObj(i -> new Pair(capChars.next(), i));
     }
 }
 

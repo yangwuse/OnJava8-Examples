@@ -1,4 +1,4 @@
-package my.ch20generics.holder;
+package my.ch20generics.simplegenerics;
 
 // 参数类型占位符 T 替换 Object 
 // 不需要手动类型转换 编译器负责类型校验和装换
