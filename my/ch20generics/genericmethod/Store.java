@@ -4,9 +4,6 @@ import java.util.ArrayList;
 import java.util.Random;
 import java.util.function.Supplier;
 import java.util.stream.IntStream;
-
-import javax.print.attribute.standard.MediaSize.NA;
-
 import bookcode.onjava.Suppliers;
 
 // 泛型构造复合数据结构
