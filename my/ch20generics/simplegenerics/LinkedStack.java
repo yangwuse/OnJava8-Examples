@@ -1,40 +1,43 @@
 package my.ch20generics.simplegenerics;
 
+import java.util.Arrays;
+import java.util.List;
+import java.util.Random;
+import java.util.stream.IntStream;
+import java.util.stream.Stream;
+
+import org.w3c.dom.ls.LSException;
+
+import bookcode.streams.RandInts;
+
+
 // 链式泛型栈
 public class LinkedStack<T> {
-    // 私有静态成员类
     private static class Node<U> {
         U item;
         Node<U> next;
-        Node() { item = null; next = null; }
-        Node(U item, Node<U> next) {
-            this.item = item;
-            this.next = next;
-        }
+        Node() {}
+        Node(U i, Node<U> n) { item = i; next = n; }
         boolean end() {
-            return next == null;
+            return item == null && next == null;
         }
     }
-    // 结束哨兵 十分巧妙
     private Node<T> top = new Node<>();
-    // 简洁版的 push()
-    public void push(T item) {
-        top = new Node<>(item, top);
+    public void push(T e) {
+        top = new Node(e, top);
     }
-    // null 作为结束的标志(哨兵)
     public T pop() {
-        T result = top.item;
-        if (!top.end()) 
+        T res = top.item;
+        if (!top.end())
             top = top.next;
-        return result;
+        return res;
     }
-
     public static void main(String[] args) {
-        LinkedStack<String> ls = new LinkedStack<>();
-        for (String s : "1 2 3 4".split(" "))
-            ls.push(s);
-        String s;
+        LinkedStack<Integer> ls = new LinkedStack<>();
+        IntStream.range(1, 11)
+            .forEach(ls::push);
+        Integer s;
         while ((s = ls.pop()) != null)
-            System.out.println(s);
+            System.out.print(s + " ");
     }
 }

@@ -5,6 +5,7 @@ import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 // Stream.generate() 创建对象流
+
 public class Duplicator {
     public static void main(String[] args) {
         // limit() 限制流大小

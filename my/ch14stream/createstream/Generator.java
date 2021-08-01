@@ -1,8 +1,10 @@
 package my.ch14stream.createstream;
 
+import java.util.PriorityQueue;
 import java.util.Random;
 import java.util.function.Supplier;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 // Stream.generate() 将对象转换为流
