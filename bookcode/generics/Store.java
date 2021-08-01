@@ -6,7 +6,7 @@ package bookcode.generics;
 // Building a complex model using generic collections
 import java.util.*;
 import java.util.function.*;
-import onjava.*;
+import bookcode.onjava.*;
 
 class Product {
   private final int id;
