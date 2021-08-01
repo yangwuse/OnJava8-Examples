@@ -18,26 +18,30 @@ import bookcode.generics.coffee.Mocha;
 
 public class CoffeeSupplier implements 
     Supplier<Coffee>, Iterable<Coffee> {
-
-    private Class<?>[] types = { Latte.class, Mocha.class, 
-        Cappuccino.class, Americano.class, Breve.class };
     
+    private Class<?>[] types = { Americano.class, Breve.class, 
+        Cappuccino.class, Latte.class, Mocha.class };
     private Random rand = new Random(47);
+
     public CoffeeSupplier() {}
+    
     // 用于迭代
-    private int size = 0;
-    public CoffeeSupplier(int s) { size = s; }
+    private int size;
+    public CoffeeSupplier(int sz) { size = sz; }
+
+    // Supplier get() 方法
     @Override public Coffee get() {
         try {
             return (Coffee)types[rand.nextInt(types.length)]
-                .getConstructor().newInstance();
-        } catch(InstantiationException | 
-                NoSuchMethodException |
-                InvocationTargetException |
-                IllegalAccessException e) {
+            .getConstructor().newInstance();
+        } catch(InstantiationException |
+        NoSuchMethodException |
+        InvocationTargetException |
+        IllegalAccessException e) {
             throw new RuntimeException(e);
         }
     }
+    
     // 内部迭代类
     class CoffeeIterator implements Iterator<Coffee> {
         int count = size;
@@ -53,15 +57,13 @@ public class CoffeeSupplier implements
     @Override public Iterator<Coffee> iterator() {
         return new CoffeeIterator();
     }
-    public static void main(String[] args) throws Exception {
+
+    public static void main(String[] args) {
         Stream.generate(new CoffeeSupplier())
             .limit(5)
             .forEach(System.out::println);
         for (Coffee c : new CoffeeSupplier(5))
             System.out.println(c);
-        String s = String.class.getConstructor().newInstance();
-        System.out.println(s);
     }
 
-    
 }
