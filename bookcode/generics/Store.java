@@ -47,7 +47,7 @@ class Aisle extends ArrayList<Shelf> {
     for(int i = 0; i < nShelves; i++)
       add(new Shelf(nProducts));
   }
-}
+} 
 
 class CheckoutStand {}
 class Office {}
