@@ -6,12 +6,14 @@ import java.util.function.Supplier;
 
 class ClassAsFactory<T> implements Supplier<T> {
     Class<T> kind;
-    ClassAsFactory(Class<T> k) { kind = k; }
+    public ClassAsFactory(Class<T> kind) {
+        this.kind = kind;
+    }
     @Override public T get() {
         try {
             return kind.getConstructor().newInstance();
-        } catch (Exception e) {
-            throw new RuntimeException();
+        } catch(Exception e) {
+            throw new RuntimeException(e);
         }
     }
 }
@@ -25,6 +27,7 @@ class Employee {
 
 public class InstantiateGenericType {
     public static void main(String[] args) {
+        // 构造类型工厂
         ClassAsFactory<Employee> fe = 
             new ClassAsFactory(Employee.class);
         System.out.println(fe.get());

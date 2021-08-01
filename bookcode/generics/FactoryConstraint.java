@@ -5,7 +5,7 @@ package bookcode.generics;
 // Visit http://OnJava8.com for more book information.
 import java.util.*;
 import java.util.function.*;
-import onjava.*;
+import bookcode.onjava.*;
 
 class IntegerFactory implements Supplier<Integer> {
   private int i = 0;
