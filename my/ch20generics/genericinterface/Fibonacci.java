@@ -12,6 +12,7 @@ public class Fibonacci implements Supplier<Long> {
     private int count = 0;
     // 缓存
     private Map<Integer, Long> cache = new HashMap<>();
+    // Supplier get() 泛型方法
     @Override public Long get() {
         return fib(count++);
     }
