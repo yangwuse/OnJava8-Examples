@@ -29,6 +29,4 @@ public class IterableFibonacci extends Fibonacci
         for (Long l : new IterableFibonacci(20))
             System.out.println(l);
     }
-        
-    
 }
