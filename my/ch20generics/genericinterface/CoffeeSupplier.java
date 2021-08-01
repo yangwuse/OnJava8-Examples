@@ -13,7 +13,7 @@ import bookcode.generics.coffee.Coffee;
 import bookcode.generics.coffee.Latte;
 import bookcode.generics.coffee.Mocha;
 
-// 泛型生成器
+// 泛型生成器 生成
 // Supplier<T> 生成器
 
 public class CoffeeSupplier implements 
