@@ -21,7 +21,6 @@ class XCreator extends GenericWithCreate<X> {
             element.getClass().getSimpleName()
         );
     }
-
 }
 
 public class CreatorGeneric {
