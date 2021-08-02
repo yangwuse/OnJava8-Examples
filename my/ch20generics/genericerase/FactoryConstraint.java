@@ -2,6 +2,7 @@ package my.ch20generics.genericerase;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.PriorityQueue;
 import java.util.function.Supplier;
 
 import bookcode.onjava.Suppliers;
