@@ -18,6 +18,8 @@ interface SuperSmell extends SuperPower {
     void trackBySmell();
 }
 
+// 顶层父类 类型参数也是最顶层
+// 相当于一个包装器
 class SuperHero<POWER extends SuperPower> {
     POWER power;
     SuperHero(POWER power) { this.power = power; }
@@ -37,6 +39,7 @@ extends SuperHero<POWER> {
     void smell() { power.trackBySmell(); }
 }
 
+// 测试类
 class SuperHearSmell implements SuperHearing, SuperSmell {
     @Override public void hearSubtleNoises() {}
     @Override public void trackBySmell() {}
