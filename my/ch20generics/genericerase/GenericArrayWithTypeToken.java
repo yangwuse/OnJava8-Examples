@@ -2,7 +2,7 @@ package my.ch20generics.genericerase;
 
 import java.lang.reflect.Array;
 
-// 传入类型标记
+// 传入类型标记 恢复被擦除的类型
 
 public class GenericArrayWithTypeToken<T> {
     private T[] array;
