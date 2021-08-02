@@ -7,7 +7,8 @@ public class GenericArray<T> {
     @SuppressWarnings("unchecked")
     public GenericArray(int sz) {
         // 创建擦除后类型数组 然后强转为泛型
-        // 此处 T[] 类型擦除后类型为 Object[]
+        // 此处 T 类型擦除后类型为 Object 
+        // 创建 Object[] 然后强转为 T[]
         array = (T[])new Object[sz];
     }
     public void put(int i, T item) {
