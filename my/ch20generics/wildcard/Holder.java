@@ -2,8 +2,6 @@ package my.ch20generics.wildcard;
 
 import java.util.Objects;
 
-import bookcode.reflection.interfacea.A;
-
 public class Holder<T> {
     private T value;
     public Holder() {}
