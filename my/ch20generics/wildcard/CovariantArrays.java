@@ -10,9 +10,10 @@ class Orange extends Fruit {}
 public class CovariantArrays {
     public static void main(String[] args) {
         Fruit[] fruit = new Apple[10];
-        fruit[0] = new Apple();
-        fruit[1] = new Jonathan();
-        // 运行时类型是 Apple[] 
+        // 只能存 Apple 和 Apple 子类
+        fruit[0] = new Apple(); // ok
+        fruit[1] = new Jonathan(); // ok
+        // 运行时类型是 Apple[], 不是 Fruit[] 或者 Orange[]
         try {
             // 编译器允许
             fruit[0] = new Fruit(); // ArrayStoreException
