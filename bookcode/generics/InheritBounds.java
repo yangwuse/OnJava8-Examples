@@ -4,12 +4,14 @@ package bookcode.generics;
 // We make no guarantees that this code is fit for any purpose.
 // Visit http://OnJava8.com for more book information.
 
+// 顶层包装类
 class HoldItem<T> {
   T item;
   HoldItem(T item) { this.item = item; }
   T getItem() { return item; }
 }
 
+// 继承顶层包装类 只需添加额外方法
 class WithColor2<T extends HasColor>
 extends HoldItem<T> {
   WithColor2(T item) { super(item); }
