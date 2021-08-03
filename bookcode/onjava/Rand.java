@@ -6,7 +6,7 @@
 package bookcode.onjava;
 import java.util.*;
 import java.util.function.*;
-import static onjava.ConvertTo.*;
+import static bookcode.onjava.ConvertTo.*;
 
 public interface Rand {
   int MOD = 10_000;
