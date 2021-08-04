@@ -12,3 +12,4 @@ public @interface Constraints {
   boolean allowNull() default true;
   boolean unique() default false;
 }
+  

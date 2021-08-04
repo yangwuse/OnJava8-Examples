@@ -12,6 +12,7 @@ public class UseCaseTracker {
     public static void 
     trackUseCases(List<Integer> useCases, Class<?> cl) {
         for (Method m : cl.getDeclaredMethods()) {
+            // 返回方法上指定类型的注解对象
             UseCase uc = m.getAnnotation(UseCase.class);
             if (uc != null) {
                 System.out.println("Found Use Case " + 
