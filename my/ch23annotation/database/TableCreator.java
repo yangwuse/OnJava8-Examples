@@ -37,7 +37,7 @@ public class TableCreator {
                 String columnName = null;
                 // 存储该字段所有注解
                 Annotation[] anns = field.getDeclaredAnnotations();
-                // 不是一个数据库列名
+                // 不是一个注解字段
                 if (anns.length < 1)
                     continue; 
                 if (anns[0] instanceof SQLInteger) {
