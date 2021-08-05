@@ -5,7 +5,7 @@
 // Abstract classes and methods
 // {java interfaces.music4.Music4}
 package bookcode.interfaces.music4;
-import polymorphism.music.Note;
+import bookcode.polymorphism.music.Note;
 
 abstract class Instrument {
   private int i; // Storage allocated for each
