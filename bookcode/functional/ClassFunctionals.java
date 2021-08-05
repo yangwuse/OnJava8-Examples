@@ -42,5 +42,6 @@ public class ClassFunctionals {
     AA aa = uo.apply(new AA());
     BinaryOperator<AA> bo = ClassFunctionals::f10;
     aa = bo.apply(new AA(), new AA());
+    
   }
 }
