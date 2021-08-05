@@ -1,4 +1,4 @@
-package my.functionnal;
+package my.functionnal.lambdaexpression;
 
 interface Strategy {
     String approach(String msg);
