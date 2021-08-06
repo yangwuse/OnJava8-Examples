@@ -4,7 +4,7 @@
 // Visit http://OnJava8.com for more book information.
 // {java interfaces.music5.Music5}
 package bookcode.interfaces.music5;
-import polymorphism.music.Note;
+import bookcode.polymorphism.music.Note;
 
 interface Instrument {
   // Compile-time constant:
