@@ -29,7 +29,7 @@ public class CountedListTest {
   public void cleanup() {
     System.out.println("Cleaning up " + list.getId());
   }
-  @Test
+  @RemoveIf
   public void insert() {
     System.out.println("Running testInsert()");
     assertEquals(list.size(), 3);
@@ -37,7 +37,7 @@ public class CountedListTest {
     assertEquals(list.size(), 4);
     assertEquals(list.get(1), "Insert");
   }
-  @Test
+  @RemoveIf
   public void replace() {
     System.out.println("Running testReplace()");
     assertEquals(list.size(), 3);
@@ -52,12 +52,12 @@ public class CountedListTest {
   void compare(List<String> lst, String[] strs) {
     assertArrayEquals(lst.toArray(new String[0]), strs);
   }
-  @Test
+  @RemoveIf
   public void order() {
     System.out.println("Running testOrder()");
     compare(list, new String[] { "0", "1", "2" });
   }
-  @Test
+  @RemoveIf
   public void remove() {
     System.out.println("Running testRemove()");
     assertEquals(list.size(), 3);
@@ -65,7 +65,7 @@ public class CountedListTest {
     assertEquals(list.size(), 2);
     compare(list, new String[] { "0", "2" });
   }
-  @Test
+  @RemoveIf
   public void addAll() {
     System.out.println("Running testAddAll()");
     list.addAll(Arrays.asList(new String[] {

@@ -7,7 +7,7 @@ import org.junit.jupiter.api.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class DeepCopyTest {
-  @Test
+  @RemoveIf
   public void testClone() {
     OceanReading reading =
       new OceanReading(33.9, 100.5);

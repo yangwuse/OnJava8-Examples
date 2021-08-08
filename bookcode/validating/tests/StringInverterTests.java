@@ -14,19 +14,19 @@ public class StringInverterTests {
   static void startMsg() {
     System.out.println(">>> StringInverterTests <<<");
   }
-  @Test
+  @RemoveIf
   void basicInversion1() {
     String in = "Exit, Pursued by a Bear.";
     String out = "eXIT, pURSUED BY A bEAR.";
     assertEquals(inverter.invert(in), out);
   }
-  @Test
+  @RemoveIf
   void basicInversion2() {
     assertThrows(Error.class, () -> {
       assertEquals(inverter.invert("X"), "X");
     });
   }
-  @Test
+  @RemoveIf
   void disallowedCharacters() {
     String disallowed = ";-_()*&^%$#@!~`0123456789";
     String result = disallowed.chars()
@@ -41,14 +41,14 @@ public class StringInverterTests {
       }).collect(Collectors.joining(""));
     assertEquals(result, disallowed);
   }
-  @Test
+  @RemoveIf
   void allowedCharacters() {
     String lowcase = "abcdefghijklmnopqrstuvwxyz ,.";
     String upcase =  "ABCDEFGHIJKLMNOPQRSTUVWXYZ ,.";
     assertEquals(inverter.invert(lowcase), upcase);
     assertEquals(inverter.invert(upcase), lowcase);
   }
-  @Test
+  @RemoveIf
   void lengthNoGreaterThan30() {
     String str = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
     assertTrue(str.length() > 30);
@@ -56,7 +56,7 @@ public class StringInverterTests {
       inverter.invert(str);
     });
   }
-  @Test
+  @RemoveIf
   void lengthLessThan31() {
     String str = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
     assertTrue(str.length() < 31);

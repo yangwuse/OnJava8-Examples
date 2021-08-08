@@ -25,7 +25,7 @@ public class CircularQueueTest {
     assertTrue(queue.empty());
     System.out.println(queue.dump());
   }
-  @Test
+  @RemoveIf
   public void full() {
     System.out.println("testFull");
     System.out.println(queue.dump());
@@ -43,7 +43,7 @@ public class CircularQueueTest {
     assertEquals(msg, "put() into full CircularQueue");
     showFullness();
   }
-  @Test
+  @RemoveIf
   public void empty() {
     System.out.println("testEmpty");
     while(!queue.empty())
@@ -58,7 +58,7 @@ public class CircularQueueTest {
     assertEquals(msg, "get() from empty CircularQueue");
     showEmptiness();
   }
-  @Test
+  @RemoveIf
   public void nullPut() {
     System.out.println("testNullPut");
     String msg = "";
@@ -70,7 +70,7 @@ public class CircularQueueTest {
     }
     assertEquals(msg, "put() null item");
   }
-  @Test
+  @RemoveIf
   public void circularity() {
     System.out.println("testCircularity");
     while(!queue.full())
